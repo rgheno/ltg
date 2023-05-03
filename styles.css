@@ -1,0 +1,14 @@
+/* 
+Estilos pré definidos
+*/
+:root {
+    --cor1: #000000; /* Preto */
+    --cor2: #ffffff; /* Branco */
+    --cor3: #062641; /* Azul LTG */
+    --cor4: #f4ab21; /* Amarelo LTG */
+    /* Pra usar essas variáveis é preciso usar no campo de VALUE o seguinte "var(--cor1)", "var(--cor2)" etc. */
+}
+
+* {
+    color: var(--cor3);
+}
