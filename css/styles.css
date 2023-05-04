@@ -25,39 +25,61 @@
 /* Configuração para testes. APAGAR DEPOIS! 
 
 * {
-    border: solid 1px rgb(239, 243, 1); 
+    border: solid 1px rgb(37, 1, 243); 
 }
 
 html {
-   border: solid 1px gray; 
+   border: solid 1px blue; 
 }
 
 body {
-    border: solid 1px green;
+    border: solid 1px gray;
 }
 
 section {
-    border: solid 1px blue;
+    border: solid 1px green;
 }
 
 .col {
-    border: solid 1px aqua;
+    border: solid 3px aqua;
 }
 
 .row {
-    border: solid 1px red;
+    border: solid 3px red;
 }
 
 /* FIM DA CONFIGURAÇÃO DE TESTE */
 
-.ret-amarelo {
+.ret-amarelo-hor {
     height: 3px;
-    width: 80px;
+    width: 15%;
     background-color: var(--cor4);
     margin-bottom: 35px;
 }
 
-.quadro-cinza-claro {
+.ret-amarelo-ver {
+    height: 80px;
+    width: 3px;
+    background-color: var(--cor4);
+}
+
+.ret-azul-ver {
+    height: 100px;
+}
+
+div.quadro-cinza-claro {
     background-color: var(--cor5);
     padding: 35px 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.btn-primary {
+    margin-top: 30px;
+    background-color: var(--cor3) !important;
 }
