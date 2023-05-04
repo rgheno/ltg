@@ -1,0 +1,63 @@
+/*  Estilos pré definidos */
+:root {
+    /* Pra usar essas variáveis é preciso usar no campo de VALUE o seguinte "var(--cor1)", "var(--cor2)" etc. */
+    --cor1: #000000; /* Preto */
+    --cor2: #ffffff; /* Branco */
+    --cor3: #062641; /* Azul LTG */
+    --cor4: #f4ab21; /* Amarelo LTG */
+    --cor5: #F7F7F7; /* Cinza claro */
+    --cor6: #D9D9D9; /* Cinza escuro */
+
+    --fonte1: "Nunito Sans", Helvetica, Arial, sans-serif;
+}
+
+* {
+    color: var(--cor3);
+    font-family: var(--fonte1);
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/nunito-sans/NunitoSans.ttf') format('truetype');
+    font-weight: 400;
+}
+
+/* Configuração para testes. APAGAR DEPOIS! 
+
+* {
+    border: solid 1px rgb(239, 243, 1); 
+}
+
+html {
+   border: solid 1px gray; 
+}
+
+body {
+    border: solid 1px green;
+}
+
+section {
+    border: solid 1px blue;
+}
+
+.col {
+    border: solid 1px aqua;
+}
+
+.row {
+    border: solid 1px red;
+}
+
+/* FIM DA CONFIGURAÇÃO DE TESTE */
+
+.ret-amarelo {
+    height: 3px;
+    width: 80px;
+    background-color: var(--cor4);
+    margin-bottom: 35px;
+}
+
+.quadro-cinza-claro {
+    background-color: var(--cor5);
+    padding: 35px 35px;
+}
