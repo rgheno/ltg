@@ -61,7 +61,7 @@ section {
   height: 3px;
   width: 15%;
   background-color: #f4ab21;
-  margin-bottom: 35px;
+  margin-bottom: 2rem;
 }
 
 .ret-amarelo-ver {
@@ -78,15 +78,15 @@ section {
 
 div.quadro-cinza-claro {
   background-color: #F7F7F7;
-  padding: 35px 35px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 2rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .btn-primary {
   background-color: #062641 !important; /* o !important sobrescreve a opção do bootstrap */
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 #menu-capa {
@@ -110,6 +110,17 @@ a { /* essa parte faz com que os links continuem com o estilo da LTG mesmo depoi
   color: #062641 !important;
   text-decoration: none !important;
   margin-left: 0.75rem !important;
+}
+
+footer .tit {
+  display: inline-block;
+}
+footer .ret-amarelo-hor {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+footer li {
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

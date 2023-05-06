@@ -65,7 +65,7 @@ section {
     height: 3px;
     width: 15%;
     background-color: $cor4;
-    margin-bottom: 35px;
+    margin-bottom: 2rem;
 }
 
 .ret-amarelo-ver {
@@ -82,15 +82,15 @@ section {
 
 div.quadro-cinza-claro {
     background-color: $cor5;
-    padding: 35px 35px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .btn-primary {
     background-color: $cor3 !important; /* o !important sobrescreve a opção do bootstrap */
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 
@@ -119,4 +119,15 @@ a { /* essa parte faz com que os links continuem com o estilo da LTG mesmo depoi
     margin-left: (1rem * .75) !important;
 }
 
-
+footer {
+    .tit {
+        display: inline-block;
+    }
+    .ret-amarelo-hor {
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+    li {
+        font-size: 0.9rem;
+    }
+}

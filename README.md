@@ -1,2 +1,2 @@
 # ltg
-Repo para projetos que envolvem a LTG
+Repo para o website da LTG
