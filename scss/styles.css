@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/*  Estilos pré definidos */
+/* Pra usar essas variáveis é preciso usar no campo de VALUE o seguinte "$cor1", "$cor2" etc. */
+/* Preto */
+/* Branco */
+/* Azul LTG */
+/* Amarelo LTG */
+/* Cinza claro */
+/* Cinza escuro */
+* {
+  color: #062641;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/nunito-sans/NunitoSans.ttf") format("truetype");
+  font-weight: 400;
+}
+img, video {
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  filter: opacity(40%);
+}
+
+/* Configuração para testes. APAGAR DEPOIS!
+
+* {
+    border: solid 3px rgb(243, 1, 223); 
+}
+
+html {
+   border: solid 1px blue; 
+}
+
+body {
+    border: solid 1px gray;
+}
+
+section {
+    border: solid 1px green;
+}
+
+.col, .col-1 {
+    border: solid 3px aqua;
+}
+
+.row {
+    border: solid 3px red;
+}
+
+/* FIM DA CONFIGURAÇÃO DE TESTE */
+#img-capa {
+  filter: opacity(50%);
+}
+
+.ret-amarelo-hor {
+  height: 3px;
+  width: 15%;
+  background-color: #f4ab21;
+  margin-bottom: 35px;
+}
+
+.ret-amarelo-ver {
+  height: 5rem;
+  width: 3px;
+  background-color: #f4ab21;
+}
+
+.ret-azul-ver {
+  height: auto;
+  width: 3px;
+  background-color: #062641;
+}
+
+div.quadro-cinza-claro {
+  background-color: #F7F7F7;
+  padding: 35px 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #062641 !important; /* o !important sobrescreve a opção do bootstrap */
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#menu-capa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 32;
+}
+header nav img {
+  max-height: 80px;
+  width: auto;
+}
+
+a { /* essa parte faz com que os links continuem com o estilo da LTG mesmo depois que add um link */
+  color: #062641 !important;
+  text-decoration: none !important;
+  margin-left: 0.75rem !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
