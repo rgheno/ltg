@@ -77,16 +77,24 @@ section {
 }
 
 div.quadro-cinza-claro {
-  background-color: #F7F7F7;
+  background-color: #F2F2F2;
   padding: 2rem 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.btn-primary {
-  background-color: #062641 !important; /* o !important sobrescreve a opção do bootstrap */
+.btn {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+#btn-orcamento, #btn-saibamais {
+  background-color: #062641;
+  border: 0;
+}
+#btn-orcamento:hover, #btn-saibamais:hover {
+  background: hsl(207, 83%, 27%);
+  border: 0px;
 }
 
 #menu-capa {
@@ -100,6 +108,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 32;
+  background: linear-gradient(to bottom, #ffffff 30%, rgba(255, 255, 255, 0));
 }
 header nav img {
   max-height: 80px;
@@ -107,20 +116,48 @@ header nav img {
 }
 
 a { /* essa parte faz com que os links continuem com o estilo da LTG mesmo depois que add um link */
-  color: #062641 !important;
-  text-decoration: none !important;
-  margin-left: 0.75rem !important;
+  color: #062641;
+  text-decoration-line: none;
+  margin-left: 0.75rem;
+}
+a:active, a:hover {
+  color: #f4ab21;
 }
 
-footer .tit {
+footer {
+  font-size: 0.9rem;
+  background: #062641;
+}
+footer h5 {
+  color: #F2F2F2;
+}
+footer .titu {
   display: inline-block;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 footer .ret-amarelo-hor {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.45rem;
 }
-footer li {
-  font-size: 0.9rem;
+footer li, footer a {
+  color: #F2F2F2;
+  text-decoration: none;
+  padding: 0.3rem;
+}
+footer li a:hover, footer a a:hover {
+  color: #062641;
+  background: #f4ab21;
+  border-radius: 0.3rem;
+}
+footer .sociais {
+  padding-bottom: 0.75rem;
+}
+footer svg {
+  margin-right: 0.5rem;
+}
+footer #copy {
+  font-size: 0.75rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -4,8 +4,8 @@
     $cor2: #ffffff; /* Branco */
     $cor3: #062641; /* Azul LTG */
     $cor4: #f4ab21; /* Amarelo LTG */
-    $cor5: #F7F7F7; /* Cinza claro */
-    $cor6: #D9D9D9; /* Cinza escuro */
+    $cor5: #F2F2F2; /* Cinza claro */
+    $cor6: #333333; /* Cinza escuro */
 
     $fonte1: "Nunito Sans", Helvetica, Arial, sans-serif;
 
@@ -87,12 +87,21 @@ div.quadro-cinza-claro {
     margin-bottom: 2rem;
 }
 
-.btn-primary {
-    background-color: $cor3 !important; /* o !important sobrescreve a opção do bootstrap */
+.btn {
+
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
+#btn-orcamento,#btn-saibamais {
+    background-color: $cor3 ;
+    border: 0;
+
+    &:hover {
+        background: hsl(207, 83%, 27%);
+        border: 0px;
+    }
+}
 
 #menu-capa {
     position:absolute;
@@ -105,6 +114,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 32;
+    background: linear-gradient(to bottom, $cor2 30%, rgba(255, 255, 255, 0));
     nav {
         img {
             max-height: 80px;
@@ -114,20 +124,55 @@ header {
 }
 
 a { /* essa parte faz com que os links continuem com o estilo da LTG mesmo depois que add um link */
-    color: $cor3 !important;
-    text-decoration: none !important;
-    margin-left: (1rem * .75) !important;
+    color: $cor3 ;
+    text-decoration-line: none;
+    margin-left: (1rem * .75) ;
+    
+    &:active, &:hover {
+        color:$cor4;
+    }
+
 }
 
 footer {
-    .tit {
+    h5 {color:$cor5;}
+    font-size: 0.9rem;
+    background: $cor3;
+
+    .titu {
         display: inline-block;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+
     }
     .ret-amarelo-hor {
         display: inline-block;
-        margin-bottom: 1rem;
+        margin-bottom: .45rem;
     }
-    li {
-        font-size: 0.9rem;
+
+    li, a {
+        color:$cor5;
+        text-decoration: none;
+        padding: 0.3rem;
+        a { 
+            &:hover {
+                color: $cor3;
+                background: $cor4;
+                border-radius: 0.3rem;
+
+            }
+        }
+    }
+
+    .sociais {
+        padding-bottom: 0.75rem;
+    }
+
+    svg {
+        margin-right: .5rem;
+    }
+
+    #copy {
+        font-size:.75rem;
     }
 }
