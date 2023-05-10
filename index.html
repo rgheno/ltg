@@ -28,172 +28,238 @@
                     
                     <a>Contato</a>
                     <a>FAQ</a>
-                    <button id="btn-orcamento" type="button" class="btn btn-primary">Orçamento</button>    
+                    <button id="btn-orcamento" type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Orçamento</button>    
             </div>
         </nav>
     </header>
     <!-- Fim da seção 0-->
+    <main>
+        <!-- Seção 1: Capa-->
+        <section id= 'cover' class="vh-100 vw-100 z">
+            <video src="./vid/cover3.mp4" autoplay loop muted preload="auto" class="object-fit-cover"></video>
+            <!--<img id='img-capa' src="./img/ph2.jpg" class="object-fit-cover">-->
+            <div id='menu-capa' class="container-md d-flex text-center ">
+                <a href="./sobre/index.html" class="col nav-link fs-2 fw-medium">Quem somos</a>
+                <a href="./metodologia/index.html" class="col nav-link fs-2 fw-medium">Metodologia</a>
+                <a href="./servicos-de-engenharia/index.html" class="col nav-link fs-2 fw-medium">Serviços de Engenharia</a>
+            </div>
 
-    <!-- Seção 1: Capa-->
-    <section id= 'cover' class="vh-100 vw-100 z">
-        <video src="./vid/cover3.mp4" autoplay loop muted preload="auto" class="object-fit-cover"></video>
-        <!--<img id='img-capa' src="./img/ph2.jpg" class="object-fit-cover">-->
-        <div id='menu-capa' class="container-md d-flex text-center ">
-            <a href="./sobre/index.html" class="col nav-link fs-2 fw-medium">Quem somos</a>
-            <a href="./metodologia/index.html" class="col nav-link fs-2 fw-medium">Metodologia</a>
-            <a href="./servicos-de-engenharia/index.html" class="col nav-link fs-2 fw-medium">Serviços de Engenharia</a>
-        </div>
-
-   </section> 
-    <!-- Fim da seção 1-->
-    
-    <!-- Seção 2: Saiba mais-->
-    <section id='secao2' class="container-md d-flex"> 
-        <div class="row justify-self-center  quadro-cinza-claro shadow">
-            <div class="col d-flex align-self-center justify-content-center">
-                <img src="./img/Screenshot_1.png" alt="casa" class="img-fluid">
-            </div>
-            <div class="col-1 d-flex align-self-center justify-content-center h-100">
-                <div class="row ret-azul-ver"></div>
-            </div>
-            <div class="col">
-                <div class="row"><!-- header 2 -->
-                    <h2>LTG ENGENHARIA</h2>
-                    <h3 class="fw-bold">SAIBA MAIS SOBRE NÓS</h3>
-                </div> 
-                <div> <!-- retangulo amarleo-->
-                    <div class="ret-amarelo-hor"></div>
-                </div> 
-                <div class="row"><!--paragrafo-->
-                    <p>Atuamos com projetos de engenharia no <strong>setor de edificações</strong>. 
-                        Disponibilizamos projetos completos de estruturas e instalações 
-                        para unidades residenciais, edifícios residenciais, comerciais, 
-                        industriais e galpões. Buscamos fornecer <strong>soluções inteligentes</strong> 
-                        e inovadoras com o uso da metodologia BIM e otimização de projetos, 
-                        a fim de reduzir custos, prezando pela qualidade e segurança.</p>
-                </div>
-                <div class="row text-center align-items-center"><!-- numero de projetos, div amarelo e área-->
-                    <div class="col text-end"><!--Projetos +40-->                       
-                            <h5 class="fw-bold">Projetos</h5>
-                            <div>+ de 40</div>                      
-                    </div>
-                    <div class="col-1 d-flex justify-content-center"> <!-- retangulo vertical-->
-                        <div class="row ret-amarelo-ver"></div>
-                    </div>
-                    <div class="col text-start">
-                        <h5 class="fw-bold">Área calculada</h5>
-                        <div>+ de 200 mil m²</div> 
-                    </div>
-                </div>
-                <div class="row"><!--botao sobre a ltg-->
-                    <div class="col text-center">
-                        <a href="./sobre/index.html"><button id="btn-saibamais" type="button" class="btn btn-primary mt-4">Sobre a LTG</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section> 
-    <!-- Fim da seção 2-->
-
-    <!-- Seção 3: Servicos-->
-    <!-- Fim da seção 3-->
-
-    <!-- Seção 4: Metodologia-->
-    <section class="container-md d-flex">
-         </div>
-        <div class="row justify-content-center quadro-cinza-claro shadow">
-            <div class="col">
+        <!-- Fim da seção 1-->
+        
+        <!-- Seção 2: Saiba mais-->
+        <section id='secao2' class="container-md d-flex"> 
+            <div class="row justify-self-center  quadro-cinza-claro shadow">
+                <div class="col d-flex align-self-center justify-content-center">
+                    <img src="./img/Screenshot_1.png" alt="casa" class="img-fluid">
+                </div>
+                <div class="col-1 d-flex align-self-center justify-content-center h-100">
+                    <div class="row ret-azul-ver"></div>
+                </div>
                 <div class="col">
-                    <h2 class="fw-bold">NOSSA METODOLOGIA</h2>
-                    <div class="ret-amarelo-hor"></div>
-                </div>
-                <div class="col" id="texto_metodologia">
-                    <p>Utilizamos uma metodologia moderna de projetar, que nos traz mais agilidade, confiabilidade e assertividade, além de ser trabalhado com modelos 3D que podem fazer com que o cliente acompanhe o progresso do seu projeto com mais facilidade.</p>
-                </div>
-            </div>
-            <div class="col align-self-end">
-                <ul class="text-end list-inline lista-metodologia">
-                    <li><div> Building Information Modeling</div></li>
-                    <li><div> Riqueza de Informações e Detalhamentos</div></li>
-                    <li><div> Segurança</div></li>
-                    <li><div> Optioneering</div></li>
-                    <li><div> Colaboração Constante</div></li>
-                    <li><div> Qualidade</div></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- Fim da seção 4-->
-
-    <!-- Seção 5: Portoflio-->
-    <section class="container-fluid">
-        <div class="faixa shadow">
-            <div id = 'proj005' class="card shadow">
-                <img src="./img/005/005-fachada.jpg" class="card-img" alt="fachada frontal do empreendimento 005">
-                <div class="card-img-overlay">
-                    <div class="azul">
+                    <div class="row"><!-- header 2 -->
+                        <h2>LTG ENGENHARIA</h2>
+                        <h3 class="fw-bold">SAIBA MAIS SOBRE NÓS</h3>
+                    </div> 
+                    <div> <!-- retangulo amarleo-->
+                        <div class="ret-amarelo-hor"></div>
+                    </div> 
+                    <div class="row"><!--paragrafo-->
+                        <p>Atuamos com projetos de engenharia no <strong>setor de edificações</strong>. 
+                            Disponibilizamos projetos completos de estruturas e instalações 
+                            para unidades residenciais, edifícios residenciais, comerciais, 
+                            industriais e galpões. Buscamos fornecer <strong>soluções inteligentes</strong> 
+                            e inovadoras com o uso da metodologia BIM e otimização de projetos, 
+                            a fim de reduzir custos, prezando pela qualidade e segurança.</p>
                     </div>
-                    <h5 class="card-title text-white fw-bold">RES. VIDA</h5>
-                    <p class="card-text text-white pq">Roca Sales, RS</p>
-                    <p class="card-text text-white">Edificação Residencial de X pavimentos, bla bla bla
-                        Bla bla bla</p>
-                    <p class="card-text text-white pq">icones das disciplinas</p>   
-                
-                </div>               
+                    <div class="row text-center align-items-center"><!-- numero de projetos, div amarelo e área-->
+                        <div class="col text-end"><!--Projetos +40-->                       
+                                <h5 class="fw-bold">Projetos</h5>
+                                <div>+ de 40</div>                      
+                        </div>
+                        <div class="col-1 d-flex justify-content-center"> <!-- retangulo vertical-->
+                            <div class="row ret-amarelo-ver"></div>
+                        </div>
+                        <div class="col text-start">
+                            <h5 class="fw-bold">Área calculada</h5>
+                            <div>+ de 200 mil m²</div> 
+                        </div>
+                    </div>
+                    <div class="row"><!--botao sobre a ltg-->
+                        <div class="col text-center">
+                            <a href="./sobre/index.html"><button id="btn-saibamais" type="button" class="btn btn-primary mt-4">Sobre a LTG</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- Fim da seção 5-->
+        </section> 
+        <!-- Fim da seção 2-->
 
-    <!-- Seção 6: Testimonials-->
-    <section class="container">
-        <div class="row justify-content-evenly text-center qd-test-ext d-flex">
-            <div class="col qd-testi shadow">
-                <div class="row">
-                    <p>Achamos ótimas as soluções apresentadas pela LTG, 
-                    principalmente em relação a visualização do projeto em 3D e compatibilização dos mesmos, 
-                    facilita bastante a explicação para os colaboradores.</p> 
+        <!-- Seção 3: Servicos-->
+        <!-- Fim da seção 3-->
+
+        <!-- Seção 4: Metodologia-->
+        <section class="container-md d-flex">
+            </div>
+            <div class="row justify-content-center quadro-cinza-claro shadow">
+                <div class="col">
+                    <div class="col">
+                        <h2 class="fw-bold">NOSSA METODOLOGIA</h2>
+                        <div class="ret-amarelo-hor"></div>
+                    </div>
+                    <div class="col" id="texto_metodologia">
+                        <p>Utilizamos uma metodologia moderna de projetar, que nos traz mais agilidade, confiabilidade e assertividade, além de ser trabalhado com modelos 3D que podem fazer com que o cliente acompanhe o progresso do seu projeto com mais facilidade.</p>
+                    </div>
                 </div>
-                <div class="row">
-                    <h6 class="fw-bold text-end">- RAK Engenharia</h6>
-                </div>
-                <div class="row quadrinho-azul align-items-center align-self-end">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#F4AB21" class="bi bi-quote" viewBox="0 0 16 16">
-                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
-                    </svg>
+                <div class="col align-self-end">
+                    <ul class="text-end list-inline lista-metodologia">
+                        <li><div> Building Information Modeling</div></li>
+                        <li><div> Riqueza de Informações e Detalhamentos</div></li>
+                        <li><div> Segurança</div></li>
+                        <li><div> Optioneering</div></li>
+                        <li><div> Colaboração Constante</div></li>
+                        <li><div> Qualidade</div></li>
+                    </ul>
                 </div>
             </div>
-            <div class="col qd-testi shadow">
-                <div class="row">
-                    <p>São parceiros como a LTG que permitem que um trabalho se torne realmente prazeroso. 
-                        Ter todas as soluções de engenharia já enviadas compatibilizadas com meu projeto arquitetônico 
-                        é garantia de uma obra tranquila e assertiva.</p> 
-                </div>
-                <div class="row">
-                    <h6 class="fw-bold text-end">- GR Soluções</h6>
-                </div>
-                <div class="row quadrinho-azul align-items-center align-self-end">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#F4AB21" class="bi bi-quote" viewBox="0 0 16 16">
-                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="col qd-testi shadow">
-                <div class="row">
-                    <p>Excelente, atendido o que esperava. Gostei bastante do projeto e também da apresentação.</p> 
-                </div>
-                <div class="row">
-                    <h6 class="fw-bold text-end">- DCZ Construtora</h6>
-                </div>
-                <div class="row quadrinho-azul align-items-center align-self-end">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#F4AB21" class="bi bi-quote" viewBox="0 0 16 16">
-                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
-                    </svg>
+        </section>
+        <!-- Fim da seção 4-->
+
+        <!-- Seção 5: Portoflio-->
+        <section class="container-fluid">
+            <div class="faixa shadow">
+                <div id = 'proj005' class="card shadow">
+                    <img src="./img/005/005-fachada.jpg" class="card-img" alt="fachada frontal do empreendimento 005">
+                    <div class="card-img-overlay">
+                        <div class="azul">
+                        </div>
+                        <h5 class="card-title text-white fw-bold">RES. VIDA</h5>
+                        <p class="card-text text-white pq">Roca Sales, RS</p>
+                        <p class="card-text text-white">Edificação Residencial de X pavimentos, bla bla bla
+                            Bla bla bla</p>
+                        <p class="card-text text-white pq">icones das disciplinas</p>   
+                    
+                    </div>               
                 </div>
             </div>
+        </section>
+        <!-- Fim da seção 5-->
+
+        <!-- Seção 6: Testimonials-->
+        <section class="container">
+            <div class="row justify-content-evenly text-center qd-test-ext d-flex">
+                <div class="col qd-testi shadow">
+                    <div class="row">
+                        <p>Achamos ótimas as soluções apresentadas pela LTG, 
+                        principalmente em relação a visualização do projeto em 3D e compatibilização dos mesmos, 
+                        facilita bastante a explicação para os colaboradores.</p> 
+                    </div>
+                    <div class="row">
+                        <h6 class="fw-bold text-end">- RAK Engenharia</h6>
+                    </div>
+                    <div class="row quadrinho-azul align-items-center align-self-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#F4AB21" class="bi bi-quote" viewBox="0 0 16 16">
+                            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col qd-testi shadow">
+                    <div class="row">
+                        <p>São parceiros como a LTG que permitem que um trabalho se torne realmente prazeroso. 
+                            Ter todas as soluções de engenharia já enviadas compatibilizadas com meu projeto arquitetônico 
+                            é garantia de uma obra tranquila e assertiva.</p> 
+                    </div>
+                    <div class="row">
+                        <h6 class="fw-bold text-end">- GR Soluções</h6>
+                    </div>
+                    <div class="row quadrinho-azul align-items-center align-self-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#F4AB21" class="bi bi-quote" viewBox="0 0 16 16">
+                            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col qd-testi shadow">
+                    <div class="row">
+                        <p>Excelente, atendido o que esperava. Gostei bastante do projeto e também da apresentação.</p> 
+                    </div>
+                    <div class="row">
+                        <h6 class="fw-bold text-end">- DCZ Construtora</h6>
+                    </div>
+                    <div class="row quadrinho-azul align-items-center align-self-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#F4AB21" class="bi bi-quote" viewBox="0 0 16 16">
+                            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fim da seção 6-->
+    </main>
+
+    <aside>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Solicitação de Orçamento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </section>
-    <!-- Fim da seção 6-->
+        <div class="offcanvas-body">
+            <form id="orcamento" action="https://eo533l2j3g3cgu6.m.pipedream.net" method="POST"> <!-- tentar fazer com um endpoint do Pipedream (LER O REAMDE.MD)-->
+                <div class="row">
+                <div class="col mb-3 form-floating">
+                    <input type="text" class="form-control" id="inputNome" name="inputNome" placeholder="Seu Nome" required>
+                    <label for="inputNome" class="ms-2">Seu Nome</label>
+                </div>
+                <div class="col mb-3 form-floating">
+                    <input type="tel" class="form-control" id="inputTel" name="inputTel" placeholder="Telefone">
+                    <label for="inputTel" class="ms-2">Telefone</label>
+                  </div>
+            </div>
+            <div class="mb-3 form-floating">
+                <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="E-mail" required>
+                <label for="inputEmail">E-mail</label>
+              </div>
+                <div class="mb-3">
+                  <label for="inputDisc" class="form-label">Orçamento para:</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="estrutura" id="estrutura" name="estrutura">
+                    <label class="form-check-label" for="estrutura">
+                      Estrutural
+                    </label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="hidrossanitario" id="hidrossanitario" name="hidrossanitario">
+                    <label class="form-check-label" for="hidrossanitario">
+                      Hidrossanitário
+                    </label>
+                <div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="eletrico" id="eletrico" name="eletrico">
+                    <label class="form-check-label" for="eletrico">
+                      Elétrico
+                    </label>
+                <div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="outros" id="outros" name="outros">
+                    <label class="form-check-label" for="outros">
+                      Outros
+                    </label>
+                <div>
+                    <hr>
+                </div>
+                <div class="mb-3">
+                    <label for="inputArquivos" class="form-label">Arquivos para orçarmento:</label>
+                    <input type="file" class="form-control" id="inputArquivos" name="inputArquivos" multiple>                      
+                </div>
+                <div class="input-group">
+                    <label for="obs" class="input-group-text">Observações</label>
+                    <textarea class="form-control" id="obs" rows="3" name="obs"></textarea>
+                  </div>
+                <hr>
+                <button id="btn-orcamento" type="submit" class="btn btn-primary">Enviar pedido</button>
+              </form>
+        </div>
+        </div>
+    </aside>
     
     <!-- Seção 7: Rodapé que deverá ser movido para outro arquivo ./static/footer.html e depois adicionado com js-->
     <footer class="container-fluid pt-4">
@@ -204,17 +270,17 @@
                     <div class="ret-amarelo-hor"><!-- retangulo amarelo-->
                     </div>
                 </div>
-                
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="./sobre/index.html">Quem Somos</a></li>
-                    <li><a href="./metodologia/index.html">Metodologia</a></li>
-                    <li><a href="./servicos-de-engenharia/index.html">Seviços de Engenharia</a></li>
-                    <li><a href="./portfolio/index.html">Portfólio</a></li>
-                    <li><a href="./contato/index.html">Contato</a></li>
-                    <li><a href="./faq/index.html">FAQ</a></li>
-                </ul>
-                
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="./sobre/index.html">Quem Somos</a></li>
+                        <li><a href="./metodologia/index.html">Metodologia</a></li>
+                        <li><a href="./servicos-de-engenharia/index.html">Seviços de Engenharia</a></li>
+                        <li><a href="./portfolio/index.html">Portfólio</a></li>
+                        <li><a href="./contato/index.html">Contato</a></li>
+                        <li><a href="./faq/index.html">FAQ</a></li>
+                    </ul>
+                </nav>
             </div>
 
             <div class="col-3">
@@ -285,5 +351,10 @@
         </div>
     </footer>
     <!-- Fim da seção 7-->
+
+    
+    <!-- Start of Bootstrap Embed Code -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- End of Bootstrap Embed Code -->
 </body>
 </html>
