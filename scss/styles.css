@@ -97,7 +97,6 @@ div.qd-testi {
   margin: 2rem;
   border-radius: 0.375rem;
   display: grid;
-  box-shadow: 2px 2px 4px rgba(6, 39, 65, 0.5);
 }
 
 div.quadrinho-azul {
@@ -142,11 +141,67 @@ div.quadrinho-azul {
   width: 100%;
   height: 0.1rem;
   transform: scaleX(0);
+  transform-origin: bottom left;
   transition: transform 300ms ease-in-out;
 }
 .lista-metodologia li div:hover::after {
   transform-origin: bottom right;
   transform: scaleX(1);
+}
+
+a { /* essa parte faz com que os links continuem com o estilo da LTG mesmo depois que add um link */
+  color: #062641;
+  text-decoration-line: none;
+  margin-left: 0.75rem;
+}
+a:active, a:hover {
+  color: #f4ab21;
+}
+
+.faixa {
+  max-height: auto;
+  background-color: #062641;
+  padding: 2rem;
+}
+
+.card {
+  height: 17rem !important;
+  width: 17rem !important;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+.card .card-text, .card .card-title {
+  transform: translateY(14rem);
+  transition: transform 600ms ease-in-out;
+}
+.card:hover .card-text, .card:hover .card-title {
+  transform: translateY(0);
+}
+.card:hover .azul {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card p.pq {
+  font-size: small;
+}
+
+.azul {
+  transform: translateY(14rem);
+  margin: -1rem;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(6, 38, 65, 0.2470588235) 1%, #062641);
+  opacity: 0;
+  position: absolute;
+  transition: transform 600ms ease-in-out;
+  transition: opacity 600ms ease-in;
+}
+
+.card-img-overlay {
+  background: linear-gradient(to bottom, rgba(6, 38, 65, 0) 20%, #062641);
 }
 
 header {
@@ -158,15 +213,6 @@ header {
 header nav img {
   max-height: 80px;
   width: auto;
-}
-
-a { /* essa parte faz com que os links continuem com o estilo da LTG mesmo depois que add um link */
-  color: #062641;
-  text-decoration-line: none;
-  margin-left: 0.75rem;
-}
-a:active, a:hover {
-  color: #f4ab21;
 }
 
 footer {
