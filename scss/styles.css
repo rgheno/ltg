@@ -7,6 +7,8 @@
 /* Amarelo LTG */
 /* Cinza claro */
 /* Cinza escuro */
+/* Fonte utilizada é Nunito Sans em todo o site */
+/* Configuracao inicial para os cards do portfolio ter sempre a altura como 100% */
 * {
   color: #062641;
   font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
@@ -159,15 +161,28 @@ a:active, a:hover {
 }
 
 .faixa {
-  max-height: auto;
   background-color: #062641;
   padding: 2rem;
+  overflow: hidden;
+}
+.faixa:hover .card {
+  animation-play-state: paused;
 }
 
 .card {
+  animation: scroll-strip 10s linear infinite;
   height: 17rem !important;
   width: 17rem !important;
   overflow: hidden;
+  padding: 0 !important;
+}
+@keyframes scroll-strip {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .card img {
   width: 100%;
@@ -190,7 +205,6 @@ a:active, a:hover {
 
 .azul {
   transform: translateY(14rem);
-  margin: -1rem;
   height: 100%;
   width: 100%;
   background: linear-gradient(to bottom, rgba(6, 38, 65, 0.2470588235) 1%, #062641);
@@ -202,6 +216,7 @@ a:active, a:hover {
 
 .card-img-overlay {
   background: linear-gradient(to bottom, rgba(6, 38, 65, 0) 20%, #062641);
+  display: grid;
 }
 
 header {
@@ -213,6 +228,9 @@ header {
 header nav img {
   max-height: 80px;
   width: auto;
+}
+header #navbar-left {
+  visibility: hidden;
 }
 
 footer {

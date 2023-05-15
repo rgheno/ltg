@@ -7,8 +7,10 @@
     $cor5: #F2F2F2; /* Cinza claro */
     $cor6: #cccccc; /* Cinza escuro */
 
-    $fonte1: "Nunito Sans", Helvetica, Arial, sans-serif;
-
+    $fonte1: "Nunito Sans", Helvetica, Arial, sans-serif; /* Fonte utilizada é Nunito Sans em todo o site */
+    
+    
+    $card-height: 100%; /* Configuracao inicial para os cards do portfolio ter sempre a altura como 100% */
 * {
     color: $cor3;
     font-family: $fonte1;
@@ -174,16 +176,32 @@ a { /* essa parte faz com que os links continuem com o estilo da LTG mesmo depoi
 }
 
 .faixa {
-    max-height: auto;
     background-color: #062641;
-    padding: 2rem;
+    padding: 2rem; 
+    overflow: hidden;
+    
+    &:hover .card {
+        animation-play-state: paused;
+    }
 }
 
 .card {
+    animation: scroll-strip 10s linear infinite;
     height: 17rem !important;
     width:17rem !important;
     overflow: hidden;
+    padding: 0 !important;
     
+    @keyframes scroll-strip {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+
     img {
         width: 100%;
         object-fit: cover;
@@ -214,9 +232,10 @@ a { /* essa parte faz com que os links continuem com o estilo da LTG mesmo depoi
     
 }
 
+
+
 .azul {
     transform: translateY(14rem);
-    margin:-1rem;
     height: 100%;
     width: 100%;
     background: linear-gradient(to bottom, #0626413f 1%, $cor3);
@@ -228,6 +247,7 @@ a { /* essa parte faz com que os links continuem com o estilo da LTG mesmo depoi
 
 .card-img-overlay {
     background: linear-gradient(to bottom, #06264100 20%, $cor3);
+    display: grid;
 }
 
 header {
@@ -240,6 +260,10 @@ header {
             max-height: 80px;
             width:auto;
         }
+    }
+
+    #navbar-left {
+        visibility: hidden;
     }
 }
 
